@@ -7,8 +7,8 @@ import numpy as np
 # Load model & scaler (download these from Colab)
 @st.cache_resource
 def load_model():
-    model = pickle.load(open('random_forest_model.pkl', 'rb'))
-    scaler = pickle.load(open('rf_scaler.pkl', 'rb'))
+    model = pickle.load(open('random forest/random_forest_model.pkl', 'rb'))
+    scaler = pickle.load(open('random forest/rf_scaler.pkl', 'rb'))
     return model, scaler
 
 st.title("🛡️ Telecom Customer Churn Predictor")
