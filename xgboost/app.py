@@ -7,8 +7,8 @@ import numpy as np
 # Load model & scaler (download these from Colab)
 @st.cache_resource
 def load_model():
-    model = pickle.load(open('best_model.pkl', 'rb'))
-    scaler = pickle.load(open('scaler.pkl', 'rb'))
+    model = pickle.load(open('xgboost/best_model.pkl', 'rb'))
+    scaler = pickle.load(open('xgboost/scaler.pkl', 'rb'))
     return model, scaler
 
 st.title("🛡️ Telecom Customer Churn Predictor")
